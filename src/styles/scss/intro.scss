@@ -1,0 +1,55 @@
+@use './partials/config.scss';
+
+.introHolder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  margin-top: 40px;
+
+  .app_logo {
+    width: 150px;
+    height: auto;
+    animation: logoToScreen 0.8s linear forwards;
+  }
+
+  @keyframes logoToScreen {
+    0% {
+      opacity: 0;
+      transform: rotateX(50deg);
+    }
+
+    50% {
+      transform: rotateX(0deg);
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  .intro_image {
+    width: 320px;
+    height: auto;
+    margin-right: 35px;
+    margin-top: 20px;
+    filter: drop-shadow(1px 3px 3px black);
+  }
+
+  .loader {
+    margin-top: 30px;
+  }
+
+  .statusBarHolder {
+    width: 100%;
+    text-align: center;
+  }
+
+  .statusBar {
+    @include config.primary_font($size: 1.15rem);
+    margin: 0;
+  }
+}

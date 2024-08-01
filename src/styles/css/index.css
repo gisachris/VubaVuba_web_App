@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+html,
+body {
+  background: linear-gradient(to bottom, #008f2b, #008f2b, #04311e);
+  width: 100dvw;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+}

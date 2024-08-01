@@ -1,0 +1,11 @@
+@use './partials/config';
+
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 7px solid white;
+  border-right-color: config.$secondary_color;
+  animation: l2 1.2s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}

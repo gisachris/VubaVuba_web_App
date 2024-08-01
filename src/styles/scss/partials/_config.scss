@@ -1,0 +1,33 @@
+//imports
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+//colors
+$primary_color: #008f2b;
+$secondary_color: #04311e;
+$tertiary_color: #1d8b01d3;
+
+//whites
+$primary_light: #ffffff;
+$secondary_light: #d6d6d6;
+
+//darks
+$primary_dark: #000000;
+
+//font mixins
+@mixin primary_font($color: $primary_light, $weight: 400, $size: 1rem) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $weight;
+  color: $color;
+  font-size: $size;
+}
+
+//page background mixins
+
+@mixin page_Background($width_size: 100%, $height_size: 100%) {
+  background: linear-gradient(to bottom, $primary_color, $primary_color, $secondary_color);
+  width: $width_size;
+  height: $height_size;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

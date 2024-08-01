@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.register_auth_page_container {
+  width: 100%;
+  height: 100dvh;
+  background: linear-gradient(to right, #f9ed32, #f9ed32, #d9bd32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register_auth_page_container .auth_container {
+  background-color: #bdc8d1;
+  border-radius: 10px;
+  width: 950px;
+  height: 85%;
+  overflow: hidden;
+  margin: 15px;
+  box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+.login_auth_page_container {
+  width: 100%;
+  height: 100dvh;
+  background-color: #bdc8d1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.login_auth_page_container .login_auth_container {
+  background-color: #bdc8d1;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.art_container {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.art_container .vector {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.art_container .blob {
+  height: 450px;
+  width: 350px;
+}
+.art_container .blobleft {
+  z-index: 0;
+  width: 470px;
+  height: 400px;
+  transform: translate(-53%, -56%);
+}
+.art_container .bloblow {
+  z-index: 2;
+  width: 360px;
+  transform: translate(-50%, -28%);
+}
+.art_container .blobright {
+  z-index: 1;
+  transform: translate(-40%, -58%);
+}
+.art_container .b_image {
+  width: 70%;
+  height: 100%;
+  z-index: 3;
+  transform: translate(-58%, -50%);
+}
+
+.skyZone {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.skyZone .hotBalloon {
+  width: 150px;
+  position: absolute;
+  height: auto;
+  animation: floatAnimation 125s linear infinite;
+}
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(calc(100% - 20px), calc(100% - 20px));
+  }
+  50% {
+    transform: translate(calc(100% - 20px), 0);
+  }
+  75% {
+    transform: translate(calc(100% - 20px), calc(-100% + 20px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.loginformHolder {
+  width: 40%;
+  background-color: #ffffff;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginformHolder .create_header {
+  font-weight: 600;
+  margin-top: 50px;
+}
+.loginformHolder .form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.loginformHolder .form label {
+  color: #7c838a;
+  font-weight: 500;
+}
+.loginformHolder .form input {
+  height: 40px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgba(176, 186, 195, 0.5647058824);
+  width: 95%;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.loginformHolder .form input::-moz-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.loginformHolder .form input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.loginformHolder .form button {
+  height: 45px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #f9ed32;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 0;
+  padding: 0px 15px;
+  align-self: center;
+  margin-top: 10px;
+}
+.loginformHolder .form button:active {
+  background-color: #836e06;
+  color: #ffffff;
+}
+.loginformHolder .form .linkLine {
+  color: #7c838a;
+  font-size: 0.9rem;
+}
+.loginformHolder .form .linkLine .link {
+  text-decoration: none;
+  color: #f9ed32;
+}
+
+.signupformHolder {
+  width: 60%;
+  background-color: #ffffff;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signupformHolder .create_header {
+  font-weight: 600;
+  margin-top: 50px;
+}
+.signupformHolder .form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.signupformHolder .form label {
+  color: #7c838a;
+  font-weight: 500;
+}
+.signupformHolder .form input {
+  height: 40px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgba(176, 186, 195, 0.5647058824);
+  width: 95%;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.signupformHolder .form input::-moz-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.signupformHolder .form input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.signupformHolder .form button {
+  height: 45px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #f9ed32;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 0;
+  padding: 0px 15px;
+  align-self: center;
+  margin-top: 10px;
+}
+.signupformHolder .form button:active {
+  background-color: #836e06;
+  color: #ffffff;
+}
+.signupformHolder .form .linkLine {
+  color: #7c838a;
+  font-size: 0.9rem;
+}
+.signupformHolder .form .linkLine .link {
+  text-decoration: none;
+  color: #f9ed32;
+}
+
+.error {
+  border: 2px solid red;
+  border-radius: 8px;
+  background-color: rgba(255, 100, 100, 0.75);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+}

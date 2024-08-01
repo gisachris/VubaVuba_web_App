@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 7px solid white;
+  border-right-color: #04311e;
+  animation: l2 1.2s infinite linear;
+}
+
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
+}

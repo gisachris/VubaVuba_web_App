@@ -1,0 +1,26 @@
+@use './partials/config';
+
+.container {
+  margin: 25px;
+
+  .about_header_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .page_header {
+      @include config.primary_font($weight: 700, $size: 2rem);
+      text-decoration: underline;
+    }
+  }
+
+  .about_section {
+
+    .paragraph_text {
+      @include config.primary_font($color: config.$secondary_light, $weight: 500);
+      text-align: center;
+    }
+  }
+}

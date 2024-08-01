@@ -1,0 +1,16 @@
+@use './partials/config';
+
+html,
+body {
+  @include config.page_Background(100dvw, 100dvh);
+  overflow: hidden;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+}

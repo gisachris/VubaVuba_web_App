@@ -1,0 +1,70 @@
+@use './partials/config';
+
+.navHolder {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .navBar {
+    width: fit-content;
+    min-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+    border-radius: 15px;
+    background-color: config.$tertiary_color;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.7);
+    padding: 5px 20px;
+    margin-bottom: 35px;
+
+    .link {
+      width: fit-content;
+      height: auto;
+      position: relative;
+      text-decoration: none;
+
+      .nav_image {
+        width: 40px;
+        height: auto;
+        object-fit: contain;
+      }
+
+    }
+
+    
+    .link::before {
+      width: fit-content;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(25%, -140%);
+      background-color: rgb(185, 185, 185);
+      border-radius: 5px;
+      padding: 3px 5px;
+      opacity: 0;
+      @include config.primary_font($size: 0.8rem, $color: config.$primary_dark, $weight: 500px);
+    }
+
+    .link:hover::before {
+      content: attr(data-name);
+      opacity: 1;
+    }
+
+    .Checkout_link::after {
+      content: attr(data-items);
+      border-radius: 50%;
+      padding: 0 5px;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(30%, 0%);
+      @include config.primary_font($size: 0.8rem, $weight: 500)
+    }
+  }
+}
