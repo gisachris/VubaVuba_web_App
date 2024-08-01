@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   try {
     webPageIntro()
 
-    // await dataFetch()
+    await dataFetch()
     
     //remove intro after data fetch
     componentCleanUp()
